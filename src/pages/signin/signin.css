@@ -1,0 +1,29 @@
+.popup__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    background: var(--overlay, rgba(0, 0, 0, 0.15));
+}
+
+.popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 18px;
+    border-radius: 0.25rem;
+    background: var(--white, #FFF);
+    box-shadow: 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 11px 15px -7px rgba(0, 0, 0, 0.20);
+}
+
+.login-form {
+    display: flex;
+    padding: 1.125rem 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.125rem;
+}
+
+.login-form__button-container {
+    padding-top: 18px;
+}

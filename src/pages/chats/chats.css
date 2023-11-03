@@ -1,0 +1,55 @@
+.messenger {
+    display: flex;
+    min-height: 100%;
+}
+
+.sidebar {
+    width: 375px;
+    flex-shrink: 0;
+    align-self: stretch;
+
+    border-right: 1px solid var(--gray);
+    background: var(--white);
+}
+
+.sidebar-header {
+    height: 48px;
+    display: flex;
+    padding: 16px 12px 10px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.sidebar-header__title {
+    color: var(--black);
+
+    font-family: PT Sans Caption, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.sidebar-header__profile-link {
+    margin-left: auto;
+}
+
+.chat-window-stub__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--darkgray);
+}
+
+.sidebar-search {
+    padding: 12px 10px 27px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chats {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
