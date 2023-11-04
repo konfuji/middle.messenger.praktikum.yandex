@@ -1,0 +1,9 @@
+.link {
+    color: var(--blue);
+    font-size: 0.875rem;
+    text-decoration: none;
+}
+
+.link_red {
+    color: var(--red);
+}

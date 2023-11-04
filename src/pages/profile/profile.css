@@ -1,0 +1,55 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+}
+
+.profile__pic-container {
+    display: flex;
+    padding: 11px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.profile__fields {
+    padding: 0 0 18px;
+    margin: 0;
+}
+
+.profile__field {
+    display: flex;
+    padding: 9px 0;
+    flex-direction: column;
+
+    border-bottom: 1px solid var(--gray);
+}
+
+.profile__field:last-child {
+    border-bottom: none;
+}
+
+.profile__field-title {
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.profile__field-value {
+    overflow: hidden;
+    color: var(--darkgray);
+    text-overflow: ellipsis;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.profile__links {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.profile__link {
+    padding-bottom: 8px;
+}
