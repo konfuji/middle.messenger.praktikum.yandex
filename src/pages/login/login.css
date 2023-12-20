@@ -9,3 +9,9 @@
 .login-form__button-container {
     padding-top: 18px;
 }
+
+.login-form__error {
+    align-self: flex-start;
+    margin-top: -10px;
+    color: var(--red);
+}

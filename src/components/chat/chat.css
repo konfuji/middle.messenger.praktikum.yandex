@@ -48,7 +48,6 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-
     border-radius: 8px;
     background: var(--green, #2ABCBC);
     margin-left: 10px;

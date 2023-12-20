@@ -6,11 +6,9 @@
     align-items: center;
     gap: 0.625rem;
     align-self: stretch;
-
     border: none;
     border-radius: 0.5rem;
     background: var(--lightgray);
-
     font-size: 14px;
 }
 

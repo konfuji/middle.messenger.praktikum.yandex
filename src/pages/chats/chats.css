@@ -1,13 +1,14 @@
 .messenger {
     display: flex;
-    min-height: 100%;
+    height: 100%;
 }
 
 .sidebar {
     width: 375px;
+    height: 100%;
+    overflow: hidden;
     flex-shrink: 0;
     align-self: stretch;
-
     border-right: 1px solid var(--gray);
     background: var(--white);
 }
@@ -22,8 +23,7 @@
 
 .sidebar-header__title {
     color: var(--black);
-
-    font-family: PT Sans Caption, sans-serif;
+    font-family: "PT Sans Caption", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -32,14 +32,6 @@
 
 .sidebar-header__profile-link {
     margin-left: auto;
-}
-
-.chat-window-stub__container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--darkgray);
 }
 
 .sidebar-search {
@@ -52,4 +44,91 @@
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+.conversation__container {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+}
+
+.conversation {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.conversation-header {
+    display: flex;
+    height: 48px;
+    border-bottom: 1px solid var(--gray, #EDEDED);
+}
+
+.conversation-header__description {
+    border-top: 1px solid #EDEDED;
+    padding: 7px 12px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.conversation-header__pic-container {
+    font-size: 0;
+}
+
+.conversation-header__title {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.conversation-header__status {
+    color: var(--darkgray);
+    font-size: 14px;
+}
+
+.conversation-header__misc {
+    margin-left: auto;
+    padding: 16px 20px;
+}
+
+.conversation__messages {
+    flex: 1 1 auto;
+}
+
+.conversation__compose {
+    display: flex;
+    height: 48px;
+    border-top: 1px solid var(--gray, #EDEDED);
+    align-items: center;
+    padding: 8px 12px;
+}
+
+.conversation__compose-attach {
+    height: 32px;
+}
+
+.conversation__compose-message {
+    flex: 1 1 auto;
+}
+
+.conversation__compose-textarea {
+    display: block;
+    outline: none;
+    padding: 10px 8px;
+    margin: 0;
+    width: 100%;
+    border: none;
+    cursor: text;
+    overflow: hidden;
+    background-color: transparent;
+    transition: opacity .1s ease-in-out;
+    min-height: 40px;
+    resize: none;
+}
+
+.conversation__compose-send {
+    height: 34px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
