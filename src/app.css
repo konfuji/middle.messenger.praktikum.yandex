@@ -7,7 +7,7 @@
     --black: #000;
     --gray: #EDEDED;
     --blue: #6682CC;
-    --overlay: rgba(0, 0, 0, 0.15);
+    --overlay: rgba(0 0 0 / 15%);
     --lightgray: #F5F5F5;
     --green: #2ABCBC;
     --darkgray: #676767;

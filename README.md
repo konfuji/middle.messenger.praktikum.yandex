@@ -29,6 +29,10 @@
 ## Команды
 `npm run dev` — запуск локального сервера для разработки с hot reload
 
+`npm run prebuild` — проверка типов TypeScript
+
 `npm run build` — сборка проекта
 
 `npm run start` — сборка проекта и запуск локального express-сервера
+
+`npm run lint` — линтинг

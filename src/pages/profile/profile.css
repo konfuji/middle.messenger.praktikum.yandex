@@ -22,7 +22,6 @@
     display: flex;
     padding: 9px 0;
     flex-direction: column;
-
     border-bottom: 1px solid var(--gray);
 }
 
